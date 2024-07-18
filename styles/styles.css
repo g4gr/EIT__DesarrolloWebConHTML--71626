@@ -1,0 +1,62 @@
+@charset 'UTF-8';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Comienzo Body */
+body {}
+
+
+/* Comienzo Navbar */
+.navbar {
+  height: 65px;
+}
+
+.navbar .logo {
+  height: 32px;
+  width: 132px;
+}
+
+.navbar .logo__img {
+  height: 28px;
+  width: 100px;
+}
+
+.navbar .menu {}
+
+.navbar .menu .menu__item {}
+
+.navbar .menu .menu__item--link {}
+
+/* Comienzo Header */
+.Header {
+  height: 100vh;
+}
+
+.Header .section {}
+
+.Header .section .article {}
+
+
+/* Comienzo Aside */
+
+/* Comienzo Main */
+.Main {
+  height: 65vh;
+}
+
+.Main .section {}
+
+.Main .section .article {}
+
+
+/* Comienzo Footer */
+.Footer {
+  height: 50vh;
+}
+
+.Footer .section {}
+
+.Footer .section .article {}
