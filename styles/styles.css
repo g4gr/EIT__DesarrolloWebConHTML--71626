@@ -6,7 +6,7 @@
 }
 
 /* Comienzo Body */
-body {}
+.Body {}
 
 
 /* Comienzo Navbar */
@@ -39,8 +39,18 @@ body {}
 
 .Header .section .article {}
 
+.Header .section .article .title {}
+
+.Header .section .article .paragraph {}
+
+.Header .section .article .form {}
+
+.Header .section .article .picture {}
+
+.Header .section .article .picture .picture__img {}
 
 /* Comienzo Aside */
+.Aside {}
 
 /* Comienzo Main */
 .Main {
@@ -51,6 +61,37 @@ body {}
 
 .Main .section .article {}
 
+.Main .section .article .container {}
+
+.Main .section .article .container .title {}
+
+.Main .section .article .container .paragraph {}
+
+.Main .section .article .container .link {}
+
+.Main .section .article .container .cite {}
+
+.Main .section .article .container .cite .card {}
+
+.Main .section .article .container .cite .card .card__avatar {}
+
+.Main .section .article .container .cite .card .card__avatar .card__avatar-img {}
+
+.Main .section .article .container .cite .card .card__name {}
+
+.Main .section .article .container .cite .card .card__job {}
+
+.Main .section .article .picture {}
+
+.Main .section .article .picture .picture__img {}
+
+.Main .section .article {}
+
+.Main .section .article .title {}
+
+.Main .section .article .paragraph {}
+
+.Main .section .article .form {}
 
 /* Comienzo Footer */
 .Footer {
@@ -60,3 +101,17 @@ body {}
 .Footer .section {}
 
 .Footer .section .article {}
+
+.Footer .section .article .logo {}
+
+.Footer .section .article .logo .logo__img {}
+
+.Footer .section .article .menu {}
+
+.Footer .section .article .menu .menu__item {}
+
+.Footer .section .article .menu .menu__item .menu__item--icon {}
+
+.Footer .section .article .menu .menu__item .menu__item--icon .img {}
+
+.Footer .section .article .menu .menu__item .menu__item--link {}
