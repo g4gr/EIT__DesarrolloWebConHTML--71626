@@ -1,12 +1,76 @@
 @charset 'UTF-8';
 
+:root {
+  /* Fonts */
+  --f_fontSize: 16px;
+  --f_fontWeight: 400;
+  --f_fontStyle: normal;
+  --f_lineHeight: 1.5;
+
+  /* Colors */
+  --c_black: #000;
+  --c_white: #FFF;
+  --c_violet900: #05043D;
+  --c_violet800: #07043B;
+  --c_violet700: #575989;
+  --c_violet200: #F9F8FE;
+  --c_green500: #429D8B;
+  --c_green300: #79D4C2;
+  --c_blue500: #2F65F9;
+  --c_blue300: #6B9BFF;
+}
+
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Comienzo HTML */
+html {
+  font-size: var(--f_fontSize);
+  font-weight: var(--f_fontWeight);
+  font-style: var(--f_fontStyle);
+  line-height: var(--f_lineHeight);
+}
+
+h1 {
+  /* 40px */
+  font-size: 2.5rem;
+}
+
+h2 {
+  /* 32px */
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6,
+p,
+a,
+span {
+  font-size: 1rem;
+  color: inherit;
+}
+
+
+
 /* Comienzo Body */
-.Body {}
+.Body {
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
 
 /* Comienzo Navbar */
@@ -33,6 +97,8 @@
 /* Comienzo Header */
 .Header {
   height: 100vh;
+
+  color: var(--c_violet900);
 }
 
 .Header .section {}
@@ -55,9 +121,18 @@
 /* Comienzo Main */
 .Main {
   height: 65vh;
+
+  color: var(--c_violet900);
 }
 
-.Main .section {}
+.Main .section:first-child {
+  background-color: var(--c_violet200);
+}
+
+.Main .section:last-child {
+  color: var(--c_white);
+  background-color: var(--c_violet700);
+}
 
 .Main .section .article {}
 
@@ -67,7 +142,13 @@
 
 .Main .section .article .container .paragraph {}
 
-.Main .section .article .container .link {}
+.Main .section .article .container .link {
+  color: var(--c_green500);
+}
+
+.Main .section .article .container .link:hover {
+  color: var(--c_green300);
+}
 
 .Main .section .article .container .cite {}
 
@@ -96,6 +177,9 @@
 /* Comienzo Footer */
 .Footer {
   height: 50vh;
+
+  color: var(--c_white);
+  background-color: var(--c_violet800);
 }
 
 .Footer .section {}
@@ -110,8 +194,12 @@
 
 .Footer .section .article .menu .menu__item {}
 
+.Footer .section .article .menu .menu__item:hover {
+  color: var(--c_blue300);
+}
+
 .Footer .section .article .menu .menu__item .menu__item--icon {}
 
-.Footer .section .article .menu .menu__item .menu__item--icon .img {}
+.Footer .section .article .menu .menu__item .menu__item--icon .icon {}
 
 .Footer .section .article .menu .menu__item .menu__item--link {}
