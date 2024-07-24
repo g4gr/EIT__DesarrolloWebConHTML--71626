@@ -12,23 +12,23 @@
 </head>
 
 <body class="Body">
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main Navigation" role="navigation">
     <figure class="logo">
-      <img class="logo__img" src="./assets/logo.svg" alt="" />
+      <img class="logo__img" src="./assets/logo.svg" alt="Logo empresa" />
     </figure>
     <menu class="menu">
       <li class="menu__item">
-        <a class="menu__item--link" href="#" target="">
+        <a class="menu__item--link" href="#" target="" area-label="Features">
           Features
         </a>
       </li>
       <li class="menu__item">
-        <a class="menu__item--link" href="#" target="">
+        <a class="menu__item--link" href="#" target="" area-label="Team">
           Team
         </a>
       </li>
       <li class="menu__item">
-        <a class="menu__item--link" href="#" target="">
+        <a class="menu__item--link" href="#" target="" area-label="Sign In">
           Sign In
         </a>
       </li>
@@ -36,7 +36,7 @@
   </nav>
   <!-- Fin Nav -->
   <!-- Comienzo Header -->
-  <header class="Header">
+  <header class="Header" role="banner">
     <section class="section">
       <article class="article">
         <h1 class="title">
@@ -47,13 +47,15 @@
           collaborate with friends, family, and co-workers.
         </p>
         <form class="form">
-          <input type="email" />
-          <input value="Get Started" />
+          <input type="email" id="email" name="email" aria-describedby="emailNotes" />
+          <input type="submit" id="button" aria-label="Get Started with Fylo" value="Get Started" />
+          <p id="emailNotes"></p>
         </form>
 
       </article>
-      <picture class="picture">
-        <img class="picture__img" src="./assets/illustration-1.svg" alt="" />
+      <picture class="picture" width="600px" height="600px">
+        <img class="picture__img" width="550px" height="550px" src="./assets/illustration-1.svg"
+          alt="Ilustración de almacenamiento en la nube" />
       </picture>
     </section>
   </header>
@@ -62,7 +64,7 @@
   <aside class="Aside"></aside>
   <!-- Fin Aside -->
   <!-- Comienzo Main -->
-  <main class="Main">
+  <main class="Main" role="complementary">
     <section class="section">
       <article class="article">
         <div class="container">
@@ -89,20 +91,23 @@
             </dl>
           </blockquote>
         </div>
-        <picture class="picture">
-          <img class="picture__img" src="./assets/illustration-2.svg" alt="">
+        <picture class="picture" height="600px" width="600px">
+          <img class="picture__img" height="550px" width="550px" src="./assets/illustration-2.svg" alt="">
         </picture>
       </article>
     </section>
     <section class="section">
       <article class="article">
-        <h2 class="title">
-          Get early access today
-        </h2>
-        <p class="paragraph">
-          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions,
-          our support team would be happy to help you.
-        </p>
+        <div class="container">
+          <h2 class="title">
+            Get early access today
+          </h2>
+          <p class="paragraph">
+            It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+            questions,
+            our support team would be happy to help you.
+          </p>
+        </div>
         <form class="form">
           <input type="email" />
           <input value="Get Started" />

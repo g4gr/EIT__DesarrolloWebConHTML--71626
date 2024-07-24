@@ -1,0 +1,154 @@
+19:25:57 From Gabriel Agustin Gonzalez Romero-871798 To Everyone:
+	Hola hola!
+19:26:01 From Gabriel Agustin Gonzalez Romero-871798 To Everyone:
+	ya estoy
+19:26:06 From Maximiliano Ortega-835043 To Everyone:
+	ya estamos en el viaje
+19:26:10 From Asistente Académica :: Candela Campos To Gabriel Agustin Gonzalez Romero-871798(direct message):
+	Aviso que no sé quién puso la música jajaja
+19:26:33 From german del marmol To Everyone:
+	hola si se escucha
+19:26:38 From Santiago De Andrea-953077 To Everyone:
+	Buenas, no hay problema, se escuha bien
+19:26:46 From Mariano Luis Martinez To Everyone:
+	Buenas
+19:26:49 From Mariano Oviedo Vega-1016580 To Everyone:
+	buenas profe, como anda
+19:26:55 From Asistente Académica :: Candela Campos To Everyone:
+	😂
+19:27:20 From Asistente Académica :: Candela Campos To Instructor :: Gaby(direct message):
+	¡Un gusto profe! Suerteee
+19:28:49 From Instructor :: Gaby To Everyone:
+	https://github.com/g4gr/EIT__DesarrolloWebConHTML--71626
+19:29:17 From Mariano Oviedo Vega-1016580 To Everyone:
+	profe en que parte se encuentra css
+19:29:38 From Instructor :: Gaby To Everyone:
+	Replying to "profe en que parte s..."
+	
+	esta en la carpeta ./styles
+19:29:51 From Instructor :: Gaby To Everyone:
+	Replying to "profe en que parte s..."
+	
+	Las imagenes estan en la carpeta ./assets
+19:30:00 From Mariano Oviedo Vega-1016580 To Everyone:
+	Replying to "profe en que parte s..."
+	
+	a sisisis
+19:30:04 From Mariano Oviedo Vega-1016580 To Everyone:
+	Replying to "profe en que parte s..."
+	
+	se me paso
+19:30:05 From Mariano Oviedo Vega-1016580 To Everyone:
+	Replying to "profe en que parte s..."
+	
+	jaja
+19:40:16 From Maximiliano Ortega-835043 To Everyone:
+	Como haces para que lo de la derecha te aparezca?
+19:41:48 From GianFranco Desumma To Everyone:
+	Replying to "Como haces para que ..."
+	
+	hablas de tener los archivos uno al lado del otro?
+19:41:54 From Maximiliano Ortega-835043 To Everyone:
+	Replying to "Como haces para que ..."
+	
+	siiii
+19:42:03 From Maximiliano Ortega-835043 To Everyone:
+	Replying to "Como haces para que ..."
+	
+	No sabia como decirlo jajajajjaj
+19:42:41 From Maximiliano Ortega-835043 To Everyone:
+	Si, tal cual
+19:43:19 From Maximiliano Ortega-835043 To Everyone:
+	Ahh okey, ahí lo pruebo
+20:00:20 From Mariano Oviedo Vega-1016580 To Everyone:
+	si
+20:15:23 From GianFranco Desumma To Everyone:
+	nombre del supermercado ? esta barato los precios
+20:36:44 From Marco Castrellon-1017088 To Everyone:
+	no se pueden poner dos clases en una etiqueta no?
+20:37:59 From GianFranco Desumma To Everyone:
+	es muy san Lorenzo
+20:38:59 From Mariano Oviedo Vega-1016580 To Everyone:
+	como seria si fueran mas de dos section?
+20:39:30 From Instructor :: Gaby To Everyone:
+	Reacted to "es muy san Lorenzo" with 😉
+20:40:24 From Marco Castrellon-1017088 To Everyone:
+	joya, pero seria mas recomendable hacerlo como decis vos firstchild , lastchild etc etc
+20:40:58 From Mariano Oviedo Vega-1016580 To Everyone:
+	a claro, claro
+20:42:41 From Mariano Oviedo Vega-1016580 To Everyone:
+	se entendio
+20:45:35 From GianFranco Desumma To Everyone:
+	podes pasar el código de los colores del root aca en el chat
+20:47:16 From Instructor :: Gaby To Everyone:
+	:root {
+	/* Fonts */
+	--f_fontSize: 16px;
+	--f_fontWeight: 400;
+	--f_fontStyle: normal;
+	--f_lineHeight: 1.5;
+	
+	/* Colors */
+	--c_black: #000;
+	--c_white: #FFF;
+	--c_violet900: #05043D;
+	--c_violet800: #07043B;
+	--c_violet700: #575989;
+	--c_violet200: #F9F8FE;
+	}
+20:48:11 From Instructor :: Gaby To Everyone:
+	--c_green300: #79D4C2;
+20:57:43 From Micaela Ayelen Villalba-885013 To Everyone:
+	profe yo ya me tengo que ir! veo la ultima parte por alumni
+20:57:49 From Micaela Ayelen Villalba-885013 To Everyone:
+	Nos vemos la próxima semana!
+21:00:26 From Mariano Oviedo Vega-1016580 To Everyone:
+	se entendio profe
+21:01:03 From Mariano Oviedo Vega-1016580 To Everyone:
+	llamar las variables es como llamar métodos en java "parecido"
+21:01:18 From Santiago De Andrea-953077 To Everyone:
+	Yo me tengo que ir tmb, nos vemos profe
+21:01:28 From Mariano Oviedo Vega-1016580 To Everyone:
+	si si
+21:01:34 From Mariano Oviedo Vega-1016580 To Everyone:
+	se llaman de las misma formas
+21:02:05 From Instructor :: Gaby To Everyone:
+	ColorZilla
+21:03:18 From Mariano Oviedo Vega-1016580 To Everyone:
+	ninguna duda profe, después sube las modificaciones al GitHub?
+21:03:29 From Mariano Oviedo Vega-1016580 To Everyone:
+	a listo
+21:03:48 From Mariano Oviedo Vega-1016580 To Everyone:
+	nos vemos profe, buen finde
+21:04:15 From Maximiliano Ortega-835043 To Everyone:
+	La consulta viene mas por los exámenes, vamos a tener algún examen final? O son todos los que aparecen en alumni y una vez los hagamos todos nos dan el certificado?
+21:04:30 From german del marmol To Everyone:
+	dale profe, nos vemos!!
+21:05:02 From Marco Castrellon-1017088 To Everyone:
+	yo hice el examen del modulo 1 pensando que era tipo un test opcional jajaja
+21:06:18 From Maximiliano Ortega-835043 To Everyone:
+	Bien, y el examen integrador es practico o seria sumando todos los conocimientos de todas las clases?
+21:08:34 From Jesus Carrasco-1021681 To Everyone:
+	el profe me quería embocar una notebook apple la primera clase
+21:09:31 From Maximiliano Ortega-835043 To Everyone:
+	Gracias profe!
+21:09:34 From Instructor :: Gaby To Everyone:
+	Reacted to "el profe me quería e..." with 🤣
+21:10:14 From Marco Castrellon-1017088 To Everyone:
+	Nos vemos la semana que viene !!
+21:10:36 From Mariano Luis Martinez To Everyone:
+	Todo bien Gaby.
+21:10:40 From Mariano Luis Martinez To Everyone:
+	Dale
+21:10:40 From Maximiliano Ortega-835043 To Everyone:
+	Dale! Nos vemos la semana que viene profe. Buen viernes y buen finde
+21:10:47 From Asistente Académica :: Candela Campos To Instructor :: Gaby(direct message):
+	Adios profee!
+21:10:49 From Asistente Académica :: Candela Campos To Instructor :: Gaby(direct message):
+	Que descanse!!
+21:10:57 From Asistente Académica :: Candela Campos To Instructor :: Gaby(direct message):
+	Un gusto!!
+21:11:08 From Instructor :: Gaby To Asistente Académica :: Candela Campos(direct message):
+	Reacted to "Que descanse!!" with 🩵
+21:11:43 From Mariano Luis Martinez To Everyone:
+	Buen finde!!! abrazo
