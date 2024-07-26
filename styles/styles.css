@@ -9,6 +9,7 @@
 
   /* Colors */
   --c_black: #000;
+  --c_grey900: #999;
   --c_white: #FFF;
   --c_violet900: #05043D;
   --c_violet800: #07043B;
@@ -39,17 +40,34 @@ blockquote {
   max-width: 42ch;
 }
 
+blockquote {
+  font-size: 0.90rem;
+}
+
+img {
+  max-width: 100%;
+  max-inline-size: 100%;
+  block-size: auto;
+  height: auto;
+  object-fit: cover / contain;
+  object-position: 50% 50%;
+}
+
 /* Comienzo Body */
 .Body {
   max-width: 1400px;
   margin: 0 auto;
+
+  display: grid;
+  grid: 65px 80vh 100vh 50vh / repeat(12, 1fr);
 
   font-size: clamp(100%, 1rem + 0.75vw, 25px);
 }
 
 /* Comienzo Navbar */
 .navbar {
-  height: 65px;
+  grid-row: 1 / 2;
+  grid-column: 1 / 13;
 
   display: flex;
   flex-direction: row;
@@ -86,14 +104,13 @@ blockquote {
 
 /* Comienzo Header */
 .Header {
-  height: 80vh;
+  grid-row: 2 / 3;
+  grid-column: 1 / 13;
 
   color: var(--c_violet900);
 }
 
 .Header .section {
-  height: 100%;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -126,7 +143,8 @@ blockquote {
 
 /* Comienzo Main */
 .Main {
-  height: 65vh;
+  grid-row: 3 / 4;
+  grid-column: 1 / 13;
 
   color: var(--c_violet900);
 }
@@ -172,17 +190,46 @@ blockquote {
   color: var(--c_green300);
 }
 
-.Main .section .article .container .cite {}
+.Main .section .article .container .cite {
+  padding: 1rem;
 
-.Main .section .article .container .cite .card {}
+  border: 2px solid var(--c_grey900);
+  border-radius: .5rem;
+}
 
-.Main .section .article .container .cite .card .card__avatar {}
+.Main .section .article .container .cite .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
 
-.Main .section .article .container .cite .card .card__avatar .card__avatar-img {}
+.main .section .article .container .cite .card .card_paragraph {}
 
-.Main .section .article .container .cite .card .card__name {}
+.Main .section .article .container .cite .card .container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
 
-.Main .section .article .container .cite .card .card__job {}
+}
+
+.Main .section .article .container .cite .card .card__avatar .card__avatar-img {
+  border-radius: 50%;
+}
+
+.Main .section .article .container .cite .card .card__id {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.Main .section .article .container .cite .card .card__name {
+  font-weight: calc(var(--f_fontWeight) + 300);
+}
+
+.Main .section .article .container .cite .card .card__job {
+  font-style: italic;
+}
 
 .Main .section .article .picture {}
 
@@ -198,12 +245,13 @@ blockquote {
 
 /* Comienzo Footer */
 .Footer {
-  height: 50vh;
+  grid-row: 4 / 5;
+  grid-column: 1 / 13;
 
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 0;
 
   color: var(--c_white);
@@ -249,20 +297,31 @@ blockquote {
 
 /* Media Queries */
 @media screen and (max-width: 362px) {
+  .Body {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
   .navbar,
   .main,
   .footer {
     margin: 0 1rem;
+
+    flex-direction: column;
   }
 }
 
 @media screen and (min-width: 362px) and (max-width: 640px) {
 
+  .Body {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
   .navbar,
   .main,
   .footer {
     margin: 0 1rem;
+
+    flex-direction: column;
   }
 
   .Header .section {
@@ -280,6 +339,10 @@ blockquote {
 
 @media screen and (min-width: 641px) and (max-width: 890px) {
 
+  .Body {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
   .navbar,
   .main,
   .footer {
@@ -289,7 +352,11 @@ blockquote {
 }
 
 
-@media screen and (min-width: 891px) {
+@media screen and (max-width: 891px) {
+
+  .Body {
+    grid-template-columns: repeat(12, 1fr);
+  }
 
   .navbar,
   .main,
