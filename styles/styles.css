@@ -59,13 +59,15 @@ img {
   margin: 0 auto;
 
   display: grid;
-  grid: 65px 80vh 100vh 50vh / repeat(12, 1fr);
+  grid: 65px 60vh 100vh 40vh / repeat(12, 1fr);
 
   font-size: clamp(100%, 1rem + 0.75vw, 25px);
 }
 
 /* Comienzo Navbar */
 .navbar {
+  padding: 0 1rem;
+
   grid-row: 1 / 2;
   grid-column: 1 / 13;
 
@@ -104,8 +106,12 @@ img {
 
 /* Comienzo Header */
 .Header {
+  padding: 0 1rem;
+
   grid-row: 2 / 3;
   grid-column: 1 / 13;
+
+  place-self: center;
 
   color: var(--c_violet900);
 }
@@ -118,6 +124,8 @@ img {
 }
 
 .Header .section .article {
+  width: 50%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,6 +151,8 @@ img {
 
 /* Comienzo Main */
 .Main {
+  padding: 0 1rem;
+
   grid-row: 3 / 4;
   grid-column: 1 / 13;
 
@@ -150,25 +160,38 @@ img {
 }
 
 .Main .section:first-child {
+  height: 70%;
 
   background-color: var(--c_violet200);
 }
 
 .Main .section:first-child .article {
+  height: 100%;
+
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   gap: 0;
 }
 
+.Main .section:first-child .article .container {
+  width: 50%;
+}
+
 .Main .section:last-child {
+  height: 30%;
+
   color: var(--c_white);
   background-color: var(--c_violet700);
 }
 
 .Main .section:last-child .article {
+  height: 100%;
+
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
 
@@ -183,6 +206,10 @@ img {
 .Main .section .article .container .paragraph {}
 
 .Main .section .article .container .link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
   color: var(--c_green500);
 }
 
@@ -191,6 +218,7 @@ img {
 }
 
 .Main .section .article .container .cite {
+  margin-top: 2rem;
   padding: 1rem;
 
   border: 2px solid var(--c_grey900);
@@ -245,6 +273,8 @@ img {
 
 /* Comienzo Footer */
 .Footer {
+  padding: 0 1rem;
+
   grid-row: 4 / 5;
   grid-column: 1 / 13;
 
@@ -278,6 +308,10 @@ img {
 }
 
 .Footer .section .article .menu .menu__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+
   list-style-type: none;
 }
 
@@ -304,7 +338,6 @@ img {
   .navbar,
   .main,
   .footer {
-    margin: 0 1rem;
 
     flex-direction: column;
   }
@@ -319,8 +352,6 @@ img {
   .navbar,
   .main,
   .footer {
-    margin: 0 1rem;
-
     flex-direction: column;
   }
 
@@ -345,9 +376,7 @@ img {
 
   .navbar,
   .main,
-  .footer {
-    margin: 0 1rem;
-  }
+  .footer {}
 
 }
 
@@ -360,8 +389,6 @@ img {
 
   .navbar,
   .main,
-  .footer {
-    margin: 0 1rem;
-  }
+  .footer {}
 
 }

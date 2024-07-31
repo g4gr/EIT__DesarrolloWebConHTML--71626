@@ -53,9 +53,33 @@
         </form>
 
       </article>
-      <picture class="picture" width="600px" height="600px">
-        <img class="picture__img" width="550px" height="550px" src="./assets/illustration-1.svg"
-          alt="Ilustración de almacenamiento en la nube" />
+      <picture class="picture">
+        <source
+            media="( max-width: 360px )"
+            srcset="./assets/illustration-1--sm.png"
+            height="360px"
+            width="360px"
+            type="image/png"
+        >
+        <source
+            media="( max-width: 640px )"
+            srcset="./assets/illustration-1--md.png"
+            height="640px"
+            width="640px"
+            type="image/png"
+        >
+        <img 
+            role="image"
+            type="image/"
+            class="picture__img" 
+            width="700px" 
+            height="700px"
+            loading="lazy"
+            fetchpriority="high"
+            decoding="sync"
+            src="./assets/illustration-1.svg"
+            alt="Ilustración de almacenamiento en la nube"
+          />
       </picture>
     </section>
   </header>
@@ -65,6 +89,9 @@
   <!-- Fin Aside -->
   <!-- Comienzo Main -->
   <main class="Main" role="complementary">
+    <figure>
+      <img src="assets/bg-curve-desktop.svg" alt="">
+    </figure>
     <section class="section">
       <article class="article">
         <div class="container">
@@ -78,6 +105,9 @@
           </p>
           <a class="link" href="#" target="">
             See how Fylo works
+            <figure class="link__icon" height="32px" width="32px">
+              <img class="link__icon--img" height="24px" width="24px" src="./assets/icon-arrow.svg" alt="">
+            </figure>
           </a>
           <blockquote class="cite">
             <figure height='32px' width="32px">
@@ -100,8 +130,14 @@
             </dl>
           </blockquote>
         </div>
-        <picture class="picture" height="600px" width="600px">
-          <img class="picture__img" height="550px" width="550px" src="./assets/illustration-2.svg" alt="">
+        <picture class="picture">
+          <img 
+              class="picture__img" 
+              height="550px" 
+              width="550px" 
+              src="./assets/illustration-2.svg" 
+              alt=""
+          />
         </picture>
       </article>
     </section>
