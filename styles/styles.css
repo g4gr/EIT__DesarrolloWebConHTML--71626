@@ -6,6 +6,8 @@
   --f_fontWeight: 400;
   --f_fontStyle: normal;
   --f_lineHeight: 1.5;
+  --f_fontFamily: 'Roboto', sans-serif;
+  --f_fontFamily2: 'OpenDyslexic', sans-serif;
 
   /* Colors */
   --c_black: #000;
@@ -33,10 +35,13 @@ html {
   font-weight: var(--f_fontWeight);
   font-style: var(--f_fontStyle);
   line-height: var(--f_lineHeight);
+  text-wrap: balance;
+
 }
 
 p,
 blockquote {
+  font-family: var(--f_fontFamily2);
   max-width: 42ch;
 }
 
@@ -59,9 +64,10 @@ img {
   margin: 0 auto;
 
   display: grid;
-  grid: 65px 60vh 100vh 40vh / repeat(12, 1fr);
+  grid: 65px 70vh 100vh 40vh / repeat(12, 1fr);
 
   font-size: clamp(100%, 1rem + 0.75vw, 25px);
+  font-family: var(--f_fontFamily);
 }
 
 /* Comienzo Navbar */
@@ -158,6 +164,7 @@ img {
 
   color: var(--c_violet900);
 }
+
 
 .Main .section:first-child {
   height: 70%;
@@ -365,6 +372,11 @@ img {
 
   .Header .section .picture {
     order: 1;
+  }
+
+  .Main .section .article {
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 

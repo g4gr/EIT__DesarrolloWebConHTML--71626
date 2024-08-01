@@ -5,9 +5,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
+
   <link rel="stylesheet" href="./styles/styles.css" />
 
   <title>Desarrollo con HTML</title>
+
+  <!-- <style>
+    @font-face {
+      font-family: 'FiraCode Regular';
+      font-weight: 400;
+      font-style: normal;
+      src: url('./fonts/FiraCodeNerdFontMono-Regular.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'FiraCode Semi Bold';
+      font-weight: 700;
+      font-style: normal;
+      src: url('./fonts/FiraCodeNerdFontMono-SemiBold.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Insolata Regular';
+      font-weight: 400;
+      font-style: normal;
+      src: url('./fonts/InconsolataNerdFontMono-Regular.ttf') format('truetype');
+    }
+  </style>-->
 
 </head>
 
@@ -18,17 +47,18 @@
     </figure>
     <menu class="menu">
       <li class="menu__item">
-        <a class="menu__item--link" href="#" target="" area-label="Features">
+        <!-- TODO: Etiquetas a -->
+        <a class="menu__item--link" href="#URI--Feature" target="" area-label="Features">
           Features
         </a>
       </li>
       <li class="menu__item">
-        <a class="menu__item--link" href="#" target="" area-label="Team">
+        <a class="menu__item--link" href="#URI--Team" target="" area-label="Team">
           Team
         </a>
       </li>
       <li class="menu__item">
-        <a class="menu__item--link" href="#" target="" area-label="Sign In">
+        <a class="menu__item--link" href="#URI--SignIn" target="" area-label="Sign In">
           Sign In
         </a>
       </li>
@@ -54,32 +84,13 @@
 
       </article>
       <picture class="picture">
-        <source
-            media="( max-width: 360px )"
-            srcset="./assets/illustration-1--sm.png"
-            height="360px"
-            width="360px"
-            type="image/png"
-        >
-        <source
-            media="( max-width: 640px )"
-            srcset="./assets/illustration-1--md.png"
-            height="640px"
-            width="640px"
-            type="image/png"
-        >
-        <img 
-            role="image"
-            type="image/"
-            class="picture__img" 
-            width="700px" 
-            height="700px"
-            loading="lazy"
-            fetchpriority="high"
-            decoding="sync"
-            src="./assets/illustration-1.svg"
-            alt="Ilustración de almacenamiento en la nube"
-          />
+        <source media="( max-width: 360px )" srcset="./assets/illustration-1--sm.png" height="360px" width="360px"
+          type="image/png">
+        <source media="( max-width: 640px )" srcset="./assets/illustration-1--md.png" height="640px" width="640px"
+          type="image/png">
+        <img role="image" type="image/" class="picture__img" width="700px" height="700px" loading="lazy"
+          fetchpriority="high" decoding="sync" src="./assets/illustration-1.svg"
+          alt="Ilustración de almacenamiento en la nube" />
       </picture>
     </section>
   </header>
@@ -89,10 +100,7 @@
   <!-- Fin Aside -->
   <!-- Comienzo Main -->
   <main class="Main" role="complementary">
-    <figure>
-      <img src="assets/bg-curve-desktop.svg" alt="">
-    </figure>
-    <section class="section">
+    <section class="section" id="URI--Feature">
       <article class="article">
         <div class="container">
           <h1 class="title">
@@ -103,8 +111,8 @@
             needs. Securely share files and folders with friends, family and colleagues for live collaboration. No email
             attachments required!
           </p>
-          <a class="link" href="#" target="">
-            See how Fylo works
+          <a class="link" href="./Fondo ilustrado.png" download type="pdf" target="_blank">
+            Download for free
             <figure class="link__icon" height="32px" width="32px">
               <img class="link__icon--img" height="24px" width="24px" src="./assets/icon-arrow.svg" alt="">
             </figure>
@@ -131,17 +139,17 @@
           </blockquote>
         </div>
         <picture class="picture">
-          <img 
-              class="picture__img" 
-              height="550px" 
-              width="550px" 
-              src="./assets/illustration-2.svg" 
-              alt=""
-          />
+          <source media="( max-width: 360px )" srcset="./assets/illustration-2--sm.png" height="360px" width="360px"
+            type="image/png">
+          <source media="( max-width: 640px )" srcset="./assets/illustration-2--md.png" height="640px" width="640px"
+            type="image/png">
+          <img role="image" type="image/" class="picture__img" width="700px" height="700px" loading="lazy"
+            fetchpriority="high" decoding="sync" src="./assets/illustration-2.svg"
+            alt="Ilustración de almacenamiento en la nube" />
         </picture>
       </article>
     </section>
-    <section class="section">
+    <section class="section" id="URI--Team">
       <article class="article">
         <div class="container">
           <h2 class="title">
@@ -162,7 +170,7 @@
   </main>
   <!-- Fin Main -->
   <!-- Comienzo Footer -->
-  <footer class="Footer">
+  <footer class="Footer" id="URI--SignIn">
     <section class="section">
       <article class="article">
         <figure class="logo">
@@ -170,18 +178,19 @@
         </figure>
         <ul class="menu">
           <li class="menu__item">
-            <figure class="menu__item--icon">
+            <figure class="menu__item--icon" width="24px" height="24px">
               <img class="img" src="./assets/icon-phone.svg" alt="">
             </figure>
-            <a class="menu__item--link" href="#" target="">
+            <a class="menu__item--link" target="_blank" href="tel:+15431234567">
               For Free Phone: +1-543-123-4567
             </a>
           </li>
           <li class="menu__item">
-            <figure class="menu__item--icon">
+            <figure class="menu__item--icon" width="24px" height="24px">
               <img class="img" src="./assets/icon-email.svg" alt="">
             </figure>
-            <a class="menu__item--link" href="#" target="">
+            <a class="menu__item--link" target=""
+              href="mailto:soporte_apps@fylo.com?subject=Hola%20quiero%20restablecer%20mi%20password&body=Hola!%20Vi%20tu%20portfolio%20sobre%20Fylo%20y%20me%20gustaria%20tener%20una%20entrevista%20con%20vos. Agendamos?%20&inreplyto=Hola%20desde%20tu%20porfolio!&sme%20gustaria%20tener%20una%20entrevista con vos. Agendamos?">
               example@fylo.com
             </a>
           </li>
@@ -192,22 +201,22 @@
       <article class="article">
         <ul class="menu">
           <li class="menu__item">
-            <a class="menu__item--link" href="#" target="">
+            <a class="menu__item--link" href="#" target="_blank">
               About Us
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item--link" href="#" target="">
+            <a class="menu__item--link" href="#" target="_blank">
               Jobs
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item--link" href="#" target="">
+            <a class="menu__item--link" href="#" target="_blank">
               Press
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item--link" href="#" target="">
+            <a class="menu__item--link" href="#" target="_blank">
               Blog
             </a>
           </li>
@@ -218,17 +227,17 @@
       <article class="article">
         <ul class="menu">
           <li class="menu__item">
-            <a class="menu__item--link" href="#" target="">
+            <a class="menu__item--link" href="#" target="_blank">
               Contact Us
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item--link" href="#" target="">
+            <a class="menu__item--link" href="#" target="_blank">
               Terms
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__item--link" href="#" target="">
+            <a class="menu__item--link" href="#" target="_blank">
               Privacy
             </a>
           </li>
@@ -239,30 +248,30 @@
       <article class="article">
         <ul class="menu">
           <li class="menu__item">
+            <a class="menu__item--link" target="_blak" href="" />
+            <figure class="menu__item--link icon" width="48px" height="48px">
+              <img class="img" height="32px" width="32px" src="./assets/i_facebook.svg" alt="">
+            </figure>
+            </a>
+          </li>
+          <li class="menu__item">
             <a class="menu__item--link" href="#" target="">
-              <figure class="menu__item--link icon">
-                <img class="img" src="./assets/i_facebook.svg" alt="">
+              <figure class="menu__item--link icon" width="48px" height="48px">
+                <img class="img" height="32px" width="32px" src="./assets/i_twitter.svg" alt="">
               </figure>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__item--link" href="#" target="">
-              <figure class="menu__item--link icon">
-                <img class="img" src="./assets/i_twitter.svg" alt="">
+              <figure class="menu__item--link icon" width="48px" height="48px">
+                <img class="img" height="32px" width="32px" src="./assets/i_instagram.svg" alt="">
               </figure>
             </a>
           </li>
           <li class="menu__item">
             <a class="menu__item--link" href="#" target="">
-              <figure class="menu__item--link icon">
-                <img class="img" src="./assets/i_instagram.svg" alt="">
-              </figure>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__item--link" href="#" target="">
-              <figure class="menu__item--link icon">
-                <img class="img" src="./assets/i_tumbler.svg" alt="">
+              <figure class="menu__item--link icon" width="48px" height="48px">
+                <img class="img" height="32px" width="32px" src="./assets/i_tumbler.svg" alt="">
               </figure>
             </a>
           </li>
